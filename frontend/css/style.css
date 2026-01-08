@@ -116,3 +116,50 @@ h1, h2, h3, h4 {
 .btn-secondary-lg:hover {
   background: #f8fafc;
 }
+/* ================= BENEFITS CARD LAYOUT ONLY ================= */
+
+/* Target only benefit cards */
+#benefits .container > div > div {
+  position: relative;
+  padding-top: 5.5rem; /* space for icon */
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* Hover effect */
+#benefits .container > div > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon container (auto, no HTML change) */
+#benefits .container > div > div::before {
+  content: '';
+  position: absolute;
+  top: 2.25rem;
+  left: 2.25rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Individual icons + colors */
+#benefits .bg-green-50::before {
+  content: '₹';
+  background: #16a34a;
+}
+
+#benefits .bg-blue-50::before {
+  content: '🌍';
+  background: #2563eb;
+}
+
+#benefits .bg-orange-50::before {
+  content: '⚙️';
+  background: #f97316;
+}

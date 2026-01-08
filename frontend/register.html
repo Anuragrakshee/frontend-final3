@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EV Odisha | Register EV Charging</title>
 
-  <!-- Google Fonts -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
   <style>
@@ -34,7 +34,7 @@
       font-family: var(--body-font);
     }
 
-    /* ---------- Card ---------- */
+
     .container {
       background: #ffffff;
       width: 420px;
@@ -50,7 +50,7 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* ---------- Header Text ---------- */
+
     .badge {
       display: inline-block;
       background: var(--light-green);
@@ -79,7 +79,7 @@
       line-height: 1.6;
     }
 
-    /* ---------- Form ---------- */
+   
     form input {
       width: 100%;
       padding: 14px 16px;
@@ -116,7 +116,7 @@
       transform: translateY(-1px);
     }
 
-    /* ---------- Thank You ---------- */
+  
     .thankyou-card {
       display: none;
       padding: 36px;
@@ -167,27 +167,7 @@
     </p>
   </div>
 
-  <script>
-    const form = document.getElementById('registerForm');
-    const formSection = document.getElementById('formSection');
-    const thankYouCard = document.getElementById('thankyouCard');
-
-    form.addEventListener('submit', function(e) {
-      e.preventDefault();
-
-      const userData = {
-        name: name.value,
-        email: email.value,
-        mobile: mobile.value,
-        city: city.value
-      };
-
-      console.log("User Data:", userData);
-
-      formSection.style.display = 'none';
-      thankYouCard.style.display = 'block';
-    });
-  </script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
