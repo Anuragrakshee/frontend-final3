@@ -1,0 +1,118 @@
+:root {
+  --primary: #15803d;
+  --background: #f0fdf4;
+}
+
+body {
+  font-family: 'Public Sans', sans-serif;
+  background-color: var(--background);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Outfit', sans-serif;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&q=80&w=2072");
+  background-size: cover;
+  background-position: center right;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.95) 40%,
+    rgba(255,255,255,0.75) 65%,
+    rgba(255,255,255,0.15) 100%
+  );
+}
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #166534;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+
+.hero-title {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  margin-bottom: 32px;
+  letter-spacing: -0.04em;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  color: #475569;
+  max-width: 520px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #166534;
+}
+
+.btn-primary-lg {
+  background: var(--primary);
+  color: white;
+  padding: 16px 40px;
+  border-radius: 1.25rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 20px 40px rgba(22, 163, 74, 0.25);
+  transition: all 0.3s ease;
+}
+
+.btn-primary-lg:hover {
+  background: #166534;
+}
+
+.btn-secondary-lg {
+  background: white;
+  color: #0f172a;
+  padding: 16px 40px;
+  border-radius: 1.25rem;
+  border: 1px solid #e5e7eb;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary-lg:hover {
+  background: #f8fafc;
+}

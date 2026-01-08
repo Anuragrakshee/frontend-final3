@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV Odisha – Drive the Future | Government of Odisha</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-slate-900">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed top-0 w-full z-50 glass border-b border-green-100">
+  <div class="container mx-auto px-6 h-20 flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <div class="bg-green-600 text-white p-2 rounded-xl shadow-lg shadow-green-200">
+        ⚡
+      </div>
+      <div>
+        <h1 class="text-xl font-bold">EV Odisha</h1>
+        <p class="text-[10px] tracking-[0.2em] uppercase font-semibold text-green-700">
+          Drive the Future
+        </p>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#incentives" class="nav-link">Subsidies</a>
+      <a href="#charging" class="nav-link">Charging</a>
+      <a href="#benefits" class="nav-link">Benefits</a>
+      <button id="registerBtn" class="btn-primary">Register EV</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero-section">
+  <div class="hero-overlay"></div>
+
+  <div class="container mx-auto px-6 relative z-10 pt-32">
+    <span class="badge">🌱 Odisha EV Policy 2025</span>
+
+    <h1 class="hero-title">
+      Powering a <br>
+      <span class="text-green-600">Cleaner Odisha</span>
+    </h1>
+
+    <p class="hero-text">
+      Join the green revolution. Get up to ₹1.5 Lakh in subsidies and zero road tax
+      on your next electric vehicle.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 mt-10">
+      <a href="#" id="exploreSubsidies" class="btn-primary-lg">
+        Explore Subsidies
+      </a>
+      <a href="#" id="locateCharging" class="btn-secondary-lg">
+        Locate Charging
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BENEFITS ================= -->
+<section id="benefits" class="py-32 bg-white">
+  <div class="container mx-auto px-6 text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Why Go Electric?</h2>
+    <p class="text-slate-500 text-lg">
+      Sustainable mobility for a smarter Odisha.
+    </p>
+  </div>
+
+  <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+    <div class="p-10 rounded-3xl bg-green-50 border border-green-100 hover:shadow-2xl transition">
+      <h3 class="text-2xl font-bold mb-4">Save ₹1 Lakh / Year</h3>
+      <p class="text-slate-600">
+        Electricity is up to 80% cheaper than petrol or diesel.
+      </p>
+    </div>
+
+    <div class="p-10 rounded-3xl bg-blue-50 border border-blue-100 hover:shadow-2xl transition">
+      <h3 class="text-2xl font-bold mb-4">Zero Emissions</h3>
+      <p class="text-slate-600">
+        Reduce pollution and improve air quality across Odisha.
+      </p>
+    </div>
+
+    <div class="p-10 rounded-3xl bg-orange-50 border border-orange-100 hover:shadow-2xl transition">
+      <h3 class="text-2xl font-bold mb-4">Low Maintenance</h3>
+      <p class="text-slate-600">
+        No engine oil, fewer parts, and minimal servicing.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INCENTIVES ================= -->
+<section id="incentives" class="py-32 bg-slate-50">
+  <div class="container mx-auto px-6 text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Odisha EV Incentives</h2>
+    <p class="text-slate-500 text-lg">
+      Direct benefits for citizens and businesses.
+    </p>
+  </div>
+
+  <div class="container mx-auto px-6 grid lg:grid-cols-3 gap-8">
+    <div class="bg-white p-10 rounded-3xl shadow-xl">
+      <h4 class="text-slate-400 uppercase tracking-widest font-bold mb-4">
+        Two Wheelers
+      </h4>
+      <p class="text-5xl font-extrabold mb-2">₹5,000</p>
+      <p class="text-green-600 font-bold">per kWh</p>
+    </div>
+
+    <div class="bg-slate-900 text-white p-10 rounded-3xl shadow-2xl scale-105">
+      <h4 class="text-slate-500 uppercase tracking-widest font-bold mb-4">
+        Four Wheelers
+      </h4>
+      <p class="text-5xl font-extrabold mb-2">₹1.5 Lakh</p>
+      <p class="text-green-400 font-bold">fixed subsidy</p>
+    </div>
+
+    <div class="bg-white p-10 rounded-3xl shadow-xl">
+      <h4 class="text-slate-400 uppercase tracking-widest font-bold mb-4">
+        Public Transport
+      </h4>
+      <p class="text-5xl font-extrabold mb-2">₹10,000</p>
+      <p class="text-green-600 font-bold">per kWh</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="py-16 bg-white border-t border-slate-100 text-center">
+  <p class="text-slate-400 text-sm font-semibold tracking-widest uppercase">
+    Government of Odisha
+  </p>
+  <p class="text-slate-600 mt-4">
+    © 2026 Department of Transport. All Rights Reserved.
+  </p>
+</footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
