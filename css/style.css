@@ -1,0 +1,79 @@
+:root {
+    --green: #16a34a;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+.glass {
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #475569;
+}
+
+.btn-primary {
+    background: var(--green);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    border: 1px solid #cbd5e1;
+    padding: 12px 24px;
+    border-radius: 999px;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1593941707882-a5bba14938c7') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, white, rgba(255,255,255,0.7));
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.section {
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.card, .pricing-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.featured {
+    background: #0f172a;
+    color: white;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+}
