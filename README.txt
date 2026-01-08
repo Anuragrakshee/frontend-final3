@@ -4,6 +4,8 @@ how to run
 NOTE
 IT TAKES LITTLE 4-5 MINUTES TO REGISTER IF WE ARE OPENING THE SERVER AFTER FEW HOURS
 
+Home page --- index.html
+
 live links
 frontend link -- https://vercel.com/anurag-rakshees-projects/frontend-final3-t8ux
 register api link -- https://frontend-final3.onrender.com/auth/register

@@ -119,48 +119,105 @@ h1, h2, h3, h4 {
 /* ================= BENEFITS CARD LAYOUT ONLY ================= */
 
 /* Target only benefit cards */
-#benefits .container > div > div {
-  position: relative;
-  padding-top: 5.5rem; /* space for icon */
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+/* Benefits Section */
+.benefits-section {
+  padding: 8rem 0;
+  background: #ffffff;
+  font-family: 'Public Sans', sans-serif;
 }
 
-/* Hover effect */
-#benefits .container > div > div:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+.benefits-header {
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
-/* Icon container (auto, no HTML change) */
-#benefits .container > div > div::before {
-  content: '';
-  position: absolute;
-  top: 2.25rem;
-  left: 2.25rem;
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
+.benefits-header h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.benefits-header p {
+  font-size: 1.125rem;
+  color: #64748b;
+}
+
+/* Grid */
+.benefits-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Card */
+.benefit-card {
+  padding: 2.5rem;
+  border-radius: 1.75rem;
+  border: 1px solid;
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+.benefit-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.benefit-card p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+/* Icon */
+.icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 26px;
-  font-weight: 700;
-  color: #fff;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* Individual icons + colors */
-#benefits .bg-green-50::before {
-  content: '₹';
+.icon-box svg {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+/* Color Variants */
+.green {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.icon-box.green {
   background: #16a34a;
 }
 
-#benefits .bg-blue-50::before {
-  content: '🌍';
+.blue {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.icon-box.blue {
   background: #2563eb;
 }
 
-#benefits .bg-orange-50::before {
-  content: '⚙️';
-  background: #f97316;
+.orange {
+  background: #fff7ed;
+  border-color: #fed7aa;
 }
 
+.icon-box.orange {
+  background: #ea580c;
+}
