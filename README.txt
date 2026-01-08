@@ -1,7 +1,7 @@
 how to run
 
 live links
-frontend link -- https://frontend-final3-17oc.vercel.app/
+frontend link -- https://vercel.com/anurag-rakshees-projects/frontend-final3-t8ux
 register api link -- https://frontend-final3.onrender.com/auth/register
 
 
