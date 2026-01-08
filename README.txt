@@ -7,7 +7,7 @@ IT TAKES LITTLE 4-5 MINUTES TO REGISTER IF WE ARE OPENING THE SERVER AFTER FEW H
 Home page --- index.html
 
 live links
-frontend link -- https://frontend-final3-b2be.vercel.app/register.html
+frontend link -- https://frontend-final3-b2be.vercel.app/
 register api link -- https://frontend-final3.onrender.com/auth/register
 
 database uri -- mongodb+srv://anuragrakshee_db_user:anurag24@cluster0.clhnjee.mongodb.net/users?appName=Cluster0
